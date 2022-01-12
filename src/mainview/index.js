@@ -13,12 +13,12 @@ export function Menubar() {
       className="shadow"
     >
       <Container fluid>
-        <Navbar.Brand className="col-md-3 col-md-2 d-md-block">
+        <Navbar.Brand className="d-md-block col-md-3 col-lg-2">
           PL2
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
+          <Nav>
             <Nav.Link>Daily Dashboard</Nav.Link>
             <Nav.Link>Managemement</Nav.Link>
             <Nav.Link>Statistics</Nav.Link>
@@ -52,10 +52,9 @@ export function Sidebar() {
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="feather feather-users"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
             aria-hidden="true"
             style={{ verticalAlign: "text-bottom", marginRight: "4px" }}
           >
@@ -74,10 +73,9 @@ export function Sidebar() {
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="feather feather-shopping-cart"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
             aria-hidden="true"
             style={{ verticalAlign: "text-bottom", marginRight: "4px" }}
           >
@@ -95,10 +93,9 @@ export function Sidebar() {
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="feather feather-bar-chart-2"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
             aria-hidden="true"
             style={{ verticalAlign: "text-bottom", marginRight: "4px" }}
           >
@@ -116,10 +113,9 @@ export function Sidebar() {
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="feather feather-file"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
             aria-hidden="true"
             style={{ verticalAlign: "text-bottom", marginRight: "4px" }}
           >
@@ -136,10 +132,9 @@ export function Sidebar() {
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="feather feather-layers"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
             aria-hidden="true"
             style={{ verticalAlign: "text-bottom", marginRight: "4px" }}
           >
@@ -157,10 +152,9 @@ export function Sidebar() {
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="feather feather-file-text"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
             aria-hidden="true"
             style={{ verticalAlign: "text-bottom", marginRight: "4px" }}
           >
@@ -180,10 +174,9 @@ export function Sidebar() {
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="feather feather-file-text"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
             aria-hidden="true"
             style={{ verticalAlign: "text-bottom", marginRight: "4px" }}
           >
