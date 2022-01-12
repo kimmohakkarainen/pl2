@@ -1,32 +1,47 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import { Navbar, Container, Nav, NavDropdown } from "react-bootstrap";
+import { Navbar, Container, Nav, Row } from "react-bootstrap";
 
 export default function App() {
   return (
-    <Navbar sticky="top" bg="light" expand="lg">
+    <>
+      <Navbar sticky="top" bg="light" expand="md">
+        <Container fluid>
+          <Navbar.Brand className="col-md-3 col-md-2 d-md-block">
+            PL2
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="me-auto">
+              <Nav.Link>Daily Dashboard</Nav.Link>
+              <Nav.Link>Managemement</Nav.Link>
+              <Nav.Link>Statistics</Nav.Link>
+              <Nav.Link>Notifications</Nav.Link>
+              <Nav.Link>Work</Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
       <Container fluid>
-        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#link">Link</Nav.Link>
-            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
-            </NavDropdown>
+        <Row>
+          <Nav
+            bg="light"
+            expand="md"
+            className="col-md-3 col-lg-2 col-md-block sidebar"
+          >
+            <div style={{ position: "sticky", paddingTop: "1rem" }}>
+              <Nav.Link>Employee</Nav.Link>
+              <Nav.Link>Wellbeing</Nav.Link>
+              <Nav.Link>Absence</Nav.Link>
+              <Nav.Link>Recruitment</Nav.Link>
+              <Nav.Link>Development</Nav.Link>
+              <Nav.Link>Induction</Nav.Link>
+              <Nav.Link>Termination</Nav.Link>
+            </div>
           </Nav>
-        </Navbar.Collapse>
+        </Row>
       </Container>
-    </Navbar>
+    </>
   );
 }
