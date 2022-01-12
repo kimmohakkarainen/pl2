@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 import { Navbar, Container, Nav, Row } from "react-bootstrap";
+import { LinkContainer } from "react-router-bootstrap";
 
 export function Menubar() {
   return (
@@ -19,11 +20,21 @@ export function Menubar() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav>
-            <Nav.Link>Daily Dashboard</Nav.Link>
-            <Nav.Link>Managemement</Nav.Link>
-            <Nav.Link>Statistics</Nav.Link>
-            <Nav.Link>Notifications</Nav.Link>
-            <Nav.Link>Work</Nav.Link>
+            <LinkContainer to="/">
+              <Nav.Link>Daily Dashboard</Nav.Link>
+            </LinkContainer>
+            <LinkContainer to="/mgmt">
+              <Nav.Link>Managemement</Nav.Link>
+            </LinkContainer>
+            <LinkContainer to="/stats">
+              <Nav.Link>Statistics</Nav.Link>
+            </LinkContainer>
+            <LinkContainer to="/notif">
+              <Nav.Link>Notifications</Nav.Link>
+            </LinkContainer>
+            <LinkContainer to="/work">
+              <Nav.Link>Work</Nav.Link>
+            </LinkContainer>
           </Nav>
         </Navbar.Collapse>
       </Container>
