@@ -47,7 +47,7 @@ export function Sidebar() {
     <Nav
       bg="light"
       expand="md"
-      className="col-md-3 col-lg-2 col-md-block sidebar"
+      className="d-none d-md-block col-md-3 col-lg-2 sidebar"
     >
       <div
         style={{
