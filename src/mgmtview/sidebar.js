@@ -17,7 +17,7 @@ export function Sidebar() {
           paddingTop: "1rem"
         }}
       >
-        <LinkContainer to="/employee/employee-1">
+        <LinkContainer to="/mgmt-1">
           <Nav.Link>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -37,10 +37,10 @@ export function Sidebar() {
               <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
               <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
             </svg>
-            Employee-1
+            Mgmt-1
           </Nav.Link>
         </LinkContainer>
-        <LinkContainer to="/employee/employee-2">
+        <LinkContainer to="/mgmt-2">
           <Nav.Link>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -59,10 +59,10 @@ export function Sidebar() {
               <circle cx="20" cy="21" r="1"></circle>
               <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
             </svg>
-            Employee-2
+            Mgmt-2
           </Nav.Link>
         </LinkContainer>
-        <LinkContainer to="/employee/employee-3">
+        <LinkContainer to="/mgmt-3">
           <Nav.Link>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -81,10 +81,10 @@ export function Sidebar() {
               <line x1="12" y1="20" x2="12" y2="4"></line>
               <line x1="6" y1="20" x2="6" y2="14"></line>
             </svg>
-            Employee-3
+            Mgmt-3
           </Nav.Link>
         </LinkContainer>
-        <LinkContainer to="/employee/employee-4">
+        <LinkContainer to="/mgmt-4">
           <Nav.Link>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -102,10 +102,10 @@ export function Sidebar() {
               <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path>
               <polyline points="13 2 13 9 20 9"></polyline>
             </svg>
-            Employee-4
+            Mgmt-4
           </Nav.Link>
         </LinkContainer>
-        <LinkContainer to="/employee/employee-5">
+        <LinkContainer to="/mgmt-5">
           <Nav.Link>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -124,10 +124,10 @@ export function Sidebar() {
               <polyline points="2 17 12 22 22 17"></polyline>
               <polyline points="2 12 12 17 22 12"></polyline>
             </svg>
-            Employee-5
+            Mgmt-5
           </Nav.Link>
         </LinkContainer>
-        <LinkContainer to="/employee/employee-6">
+        <LinkContainer to="/mgmt-6">
           <Nav.Link>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -148,10 +148,10 @@ export function Sidebar() {
               <line x1="16" y1="17" x2="8" y2="17"></line>
               <polyline points="10 9 9 9 8 9"></polyline>
             </svg>
-            Employee-6
+            Mgmt-6
           </Nav.Link>
         </LinkContainer>
-        <LinkContainer to="/employee/employee-7">
+        <LinkContainer to="/mgmt-7">
           <Nav.Link>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -172,7 +172,7 @@ export function Sidebar() {
               <line x1="16" y1="17" x2="8" y2="17"></line>
               <polyline points="10 9 9 9 8 9"></polyline>
             </svg>
-            Employee-7
+            Mgmt-7
           </Nav.Link>
         </LinkContainer>
       </div>
