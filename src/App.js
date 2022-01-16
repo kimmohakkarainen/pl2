@@ -6,7 +6,7 @@ import { Navbar, Container, Nav, Row } from "react-bootstrap";
 
 import { Menubar, Sidebar } from "./mainview";
 import { ManagementView } from "./mgmtview";
-import { DashboardView } from "./dashboardview";
+import DashboardView from "./dashboardview";
 import { StatisticsView } from "./statisticsview";
 import { NotificationView } from "./notifview";
 import { WorkView } from "./workview";

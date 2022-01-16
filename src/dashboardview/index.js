@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ReactDOM from "react-dom";
+import { connect } from "react-redux";
 
 import { Navbar, Container, Nav, Row } from "react-bootstrap";
 import { Sidebar } from "./sidebar";
+import { fetchHelloWorld } from "../actions";
 
-export function DashboardView() {
+function DashboardView({ person, helloWorld, fetchHelloWorld }) {
+  useEffect(() => {
+    fetchHelloWorld();
+  }, []);
+
   return (
     <Row>
       <Sidebar />
@@ -14,3 +20,15 @@ export function DashboardView() {
     </Row>
   );
 }
+
+function mapStateToProps(state) {
+  return state;
+}
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    fetchHelloWorld: (password) => dispatch(fetchHelloWorld(password))
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(DashboardView);
