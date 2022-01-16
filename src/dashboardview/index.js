@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import { connect } from "react-redux";
 
 import { Navbar, Container, Nav, Row } from "react-bootstrap";
-import { Sidebar } from "./sidebar";
+import { Sidebar, sidebar_table } from "../common/sidebar";
 import { fetchHelloWorld } from "../actions";
 
 function DashboardView({ person, helloWorld, fetchHelloWorld }) {
@@ -13,7 +13,7 @@ function DashboardView({ person, helloWorld, fetchHelloWorld }) {
 
   return (
     <Row>
-      <Sidebar />
+      <Sidebar table={sidebar_table} />
       <div className="col-md-9 ms-sm-auto col-lg-10 px-md-4">
         <div>Dashboard</div>
       </div>
