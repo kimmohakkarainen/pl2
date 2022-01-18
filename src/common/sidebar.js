@@ -12,17 +12,6 @@ import {
   IconPile
 } from "./icons";
 
-export const sidebar_table = [
-  IconEmployees,
-  { path: "/employee", title: "Employee", icon: "IconEmployees" },
-  { path: "/wellbeing", title: "Wellbeing", icon: "IconChart" },
-  { path: "/absence", title: "Absence", icon: "IconShoppingCart" },
-  { path: "/recruitment", title: "Recruitment", icon: "IconEmptyDoc" },
-  { path: "/development", title: "Development", icon: "IconFullDoc" },
-  { path: "/induction", title: "Induction", icon: "IconFullDoc" },
-  { path: "/termination", title: "Termination", icon: "IconPile" }
-];
-
 export function Sidebar({ table }) {
   return (
     <Nav
@@ -38,9 +27,8 @@ export function Sidebar({ table }) {
       >
         {table.map((row) => {
           return (
-            <LinkContainer to="{row.path}">
+            <LinkContainer to={row.path}>
               <Nav.Link>
-                {console.log(row)}
                 {row.icon === "IconEmployees" && <IconEmployees />}
                 {row.icon === "IconShoppingCart" && <IconShoppingCart />}
                 {row.icon === "IconChart" && <IconChart />}

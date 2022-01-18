@@ -3,8 +3,18 @@ import ReactDOM from "react-dom";
 import { connect } from "react-redux";
 
 import { Navbar, Container, Nav, Row } from "react-bootstrap";
-import { Sidebar, sidebar_table } from "../common/sidebar";
+import { Sidebar } from "../common/sidebar";
 import { fetchHelloWorld } from "../actions";
+
+const sidebar_table = [
+  { path: "/employee", title: "Employee", icon: "IconEmployees" },
+  { path: "/wellbeing", title: "Wellbeing", icon: "IconChart" },
+  { path: "/absence", title: "Absence", icon: "IconShoppingCart" },
+  { path: "/recruitment", title: "Recruitment", icon: "IconEmptyDoc" },
+  { path: "/development", title: "Development", icon: "IconFullDoc" },
+  { path: "/induction", title: "Induction", icon: "IconFullDoc" },
+  { path: "/termination", title: "Termination", icon: "IconPile" }
+];
 
 function DashboardView({ person, helloWorld, fetchHelloWorld }) {
   useEffect(() => {
